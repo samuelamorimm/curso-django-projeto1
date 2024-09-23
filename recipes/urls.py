@@ -17,20 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
-from recipes.views import home, contato, sobre
+from recipes.views import home
 
 # HTTP request
 def _home(request):
     return HttpResponse('<h1>Hello Word</h1>')
 
-def _sobre(request):
-    return HttpResponse('<h1>Sobre nós</h1>')
 
-def _contato(request):
-    return HttpResponse('<h1>Contato</h1>')  
 
 urlpatterns = [
     path('', home),
-    path('sobre/', sobre),
-    path('contato/', contato),
 ]

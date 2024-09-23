@@ -7,8 +7,3 @@ def home(request):
         'name': 'Samuel Henrique', 
     })
 
-def contato(request):
-    return render(request, 'me_apague/temp.html')
-
-def sobre(request):
-    return HttpResponse('<h1>Sobre nós</h1>')
