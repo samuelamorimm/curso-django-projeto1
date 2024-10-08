@@ -1,16 +1,14 @@
-{% include "recipes/partials/head.html" %}
-{% comment %} incluindo o head que coloquei em uma pasta separada {% endcomment %}
 
-<body>
+{% extends 'global/base.html' %}
 
-    {% include 'recipes/partials/header.html' %}
-
-    {% include 'recipes/partials/search.html' %}
-
-    <main class="main-content-container">
-        <div class="main-content main-content-list container">
-            
-        </div>
-    </main>
-</body>
-</html>
+{% block content %}
+<div class="main-content main-content-list container">
+    
+    {% include 'recipes/partials/recipe.html' %}
+    {% include 'recipes/partials/recipe.html' %}
+    {% include 'recipes/partials/recipe.html' %}
+    {% include 'recipes/partials/recipe.html' %}
+    {% include 'recipes/partials/recipe.html' %}
+</div>
+{% endblock content %}
+    
